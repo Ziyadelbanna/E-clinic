@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Clinic login page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+    .login{
+
+      margin-top: 100px;
+      background: #E7E7E7;
+      opacity: 0.98;
+
+      padding-top: 20px;
+      padding-bottom: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 15px;
+    }
+
+    .navbar {
+    margin-bottom: 0px;
+    }
+
+    .large{
+      font-size: 150%;
+    }
+
+    #bgImage{
+
+        background-image: url("images/bg 1.jpg");
+        position: fixed;
+        height:100% ;
+        width: 100%;
+        background-size: cover;
+    }
+
+    #page1Content{
+
+      margin-top: 90px;
+    }
+
+
+
+    .centered {
+
+      text-align: center;
+    }
+
+    .btn-success {
+    color: white ;
+    background-color: #2285D3;
+    border-color: #E7E7E7;
+  }
+
+    </style>
+
+  </head>
+  <body>
+<?php
+include 'Checking user.php';
+?>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <a href="" class="navbar-brand">
+            <span class="glyphicon glyphicon-heart large" aria-hidden="true"></span>
+            E-clinic</a>
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+
+            <span class="sr-only">Toggle navigation </span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+
+               <li class="centered active"><a href="">log in</a></li>
+               <li class="centered"><a href="https://e-clinic.000webhostapp.com/page2.html">page 2</a></li>
+               <li class="centered"><a href="https://e-clinic.000webhostapp.com/about.html">about us</a></li>
+
+           </ul>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div style='overflow: auto;' class="container" id="bgImage">
+
+      <form id="page1Content">
+
+        <div class="container">
+
+          <div class="form-group login">
+
+            <label for = "login">Log In </label>
+            <input name="login" type="email" placeholder="e-mail" class="form-control"/>
+            <input name="login" type="password" placeholder="password" class="form-control">
+
+          </div>
+
+
+          <!--<div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Department
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div> -->
+
+
+            <br/>
+            <input type="submit" value="Sign In"  class="btn btn-success"/>
+
+            <br/><br/>
+
+          </div>
+
+      </form>
+
+    </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+  <div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website_e-clinic&utm_content=footer_img"><img src="https://cloud.githubusercontent.com/assets/23024110/20663010/9968df22-b55e-11e6-941d-edbc894c2b78.png"  alt="www.000webhost.com"></a></div></body>
+</html>

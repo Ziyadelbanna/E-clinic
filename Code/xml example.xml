@@ -1,0 +1,34 @@
+<inventors>
+
+	<inventor>
+		<name>	Elon Musk	</name>
+		<age>  45 </age>
+		<company> spacex </company>
+
+	</inventor>
+		<name>	Mark Zuckerberg	</name>
+		<age>  35 </age>
+		<company> facebook </company>
+	
+	<inventor>
+		<name>	Bill Gates	</name>
+		<age>  60 </age>
+		<company> Microsoft </company>
+
+	</inventor>
+
+	<inventor>
+		<name>	Jeff Bezos	</name>
+		<age>  45 </age>
+		<company> Amazon </company>
+	
+	</inventor>
+	
+	<inventor>
+		<name>	Sergy Bern	</name>
+		<age>  45 </age>
+		<company> Google </company>
+	
+	</inventor>
+
+</inventors>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>About Us</title>
+    <title>Welcome</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,30 @@
 
     .navbar {
     margin-bottom: 0px;
+    }
+
+    .dropdown-menu {
+      left: 50.7%;
+      right: auto;
+      text-align: center;
+      transform: translate(-50%, 0);
+    }
+
+    button, input, optgroup, select, textarea {
+    margin: 5px 47% 0px;
+    font: inherit;
+    color: inherit;
+    }
+
+    .mainPage{
+
+      background: #E7E7E7;
+      opacity: 0.98;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 15px;
     }
 
     .jumbotron{
@@ -39,25 +63,22 @@
 
     #bgImage{
 
-        background:url("images/bg 3.jpg");
-        min-height : 100%;
-        min-width : 100%;
-        background-size:100% 100%;
-        background-repeat:no-repeat;
-        overflow-y: hidden;
-        overflow-x: hidden;
+        background:url("images/bg5.jpg");
+        position: fixed;
+        height:100% ;
+        width: 100%;
         background-size: cover;
     }
 
-    #page3Content{
+    #introContent{
 
-      margin-top: 100px;
+      margin-top: 200px;
     }
 
 
-    .white{
+    .color{
 
-      color:#f9f9f9;
+      color:#5E5E5E;
     }
 
     .largeText{
@@ -80,16 +101,6 @@
       text-align: center;
     }
 
-    #problemHeader{
-
-      color: #E9EDF0;
-      font-weight:bold;
-      font-family:Impact, Charcoal, sans-serif  ;
-      font-size: 20px;
-      -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: black;
-    }
-
 
     #head{
 
@@ -110,7 +121,7 @@
 
         <div class="navbar-header">
 
-          <a href="intro.html" class="navbar-brand" id="logo">
+          <a href="" class="navbar-brand" id="logo">
           <span class="glyphicon glyphicon-heart large " aria-hidden="true"></span> E-clinic</a>
 
           <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -128,8 +139,7 @@
 
            <ul class="nav navbar-nav navbar-right">
 
-             <li class="centered"><a href="index.html">log out</a></li>
-             <li class="centered active"><a href="">about us</a></li>
+             <li class="centered "><a href="about.html">about us</a></li>
 
            </ul>
         </div>
@@ -140,27 +150,32 @@
 
       <!-- end navbar  -->
 
-      <div class="container" id="bgImage">
+      <div style='overflow-y: auto; overflow-x: hidden;' class="container" id="bgImage">
 
-        <div id="page3Content">
+        <div id="introContent">
 
-          <h1 class="centered largeText white cursive"> E-Doctor System</h1>
+          <div class="form-group mainPage">
 
-          <ul>
-            <li id="problemHeader" >
-              <h2  style="font-size:200%">The Problem We Target:</h2>
+            <h1 class="centered largeText color cursive"> Welcome to E-clinic</h1>
 
-              <h3 > Day to day accidents forces patients to appeal to hospitals and clinics. Large and famous city hospitals has various departments, for example : Cardiology department, Critical care department, Ear nose and throat department ,etc.. Each of which has its own functions and own doctors, for each department there is the database system holding the complete information about its patients.
-Larger databases and more patients leads to less ability for the doctors to gather enough information about the patients which leads to difficulty in scheduling their tasks and less ability in scheduling their appointments with patients and monitoring their daily objectives.
-These problems may lead to messy work environment and worsen the quality of social environment inside the hospital.
-</h3>
+            <!--dropdown stars-->
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                You Are :
+                <span class="caret" ></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="index.html">A Doctor</a></li>
+                <li><a href="empLogin.html">An Administrative Employee</a></li>
+              </ul>
+            </div>
+            <!--dropdown ends-->
 
-            </li>
-          </ul>
-
+          </div>
 
         </div>
       </div>
+
 
 
 
@@ -172,9 +187,5 @@ These problems may lead to messy work environment and worsen the quality of soci
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
-
-    <script>
-        $("#bgImage").css("height",$(window).height());
-    </script>
   </body>
 </html>
